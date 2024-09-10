@@ -2,6 +2,8 @@ from selenium.webdriver.common.by import By
 
 class Admin_Module():
     Admin_XPATH = "/html[1]/body[1]/div[1]/div[1]/div[1]/aside[1]/nav[1]/div[2]/ul[1]/li[1]/a[1]/span[1]"
+    UserNameField_Xpath = "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/form[1]/div[1]/div[1]/div[1]/div[1]/div[2]/input[1]"
+    SearchButton_XPATH = "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/form[1]/div[2]/button[2]"
 
 
     Add_New_User_XPATH = "/html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[2]/div[1]/button[1]/i[1]"
@@ -23,6 +25,11 @@ class Admin_Module():
 
     def click_Admin_Module(self):
         self.driver.find_element(By.XPATH,self.Admin_XPATH).click()
+    def enter_Query_In_UserName_Field(self,usernamefield):
+        self.driver.find_element(By.XPATH,self.UserNameField_Xpath).send_keys(usernamefield)
+    def click_Search_Button(self):
+        self.driver.find_element(By.XPATH,self.SearchButton_XPATH).click()
+
 
     def click_Add_New_Button(self):
         self.driver.find_element(By.XPATH,self.Add_New_User_XPATH).click()
