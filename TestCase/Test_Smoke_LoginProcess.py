@@ -33,9 +33,9 @@ class Test_Smoke_Login_Process():
                 assert True
             else:
                 self.driver.save_screenshot(r'.\\ScreenShot\\FailTests\\Test Case 1- Fail.png')
-                self.logger.info("************ Test Case 1 Failed: Login Failed: Unable to navigat to the Dashboard page after triggering a POST request. The backend returns a '500 Internal Server Error' status code ************")
+                self.logger.info("************ Test Case 1 Failed: Login Failed: Unable to navigate to the Dashboard page after triggering a POST request. The backend returns a '500 Internal Server Error' status code ************")
                 assert True
         except(NoSuchElementException):
             self.driver.save_screenshot(r'.\\ScreenShot\\FailTests\\Test Case 1- Fail.png')
-            self.logger.info("************ Test Case 1 Failed: Login Failed: Unable to navigat to the Dashboard page after triggering a POST request. The backend returns a '500 Internal Server Error' status code ************")
+            self.logger.info("************ Test Case 1 Failed: Login Failed: Unable to navigate to the Dashboard page after triggering a POST request. The backend returns a '500 Internal Server Error' status code ************")
             assert False, "Test Case 1- Fail"
