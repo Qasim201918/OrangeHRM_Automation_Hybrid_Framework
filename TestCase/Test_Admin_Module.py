@@ -44,7 +44,7 @@ class Test_Admin_Details_Page():
 
         except(NoSuchElementException):
             self.driver.save_screenshot(r".\\ScreenShot\\FailTests\\Test Case 1- Fail.png")
-            self.logger.error("*********** Test Case 1 Failed: Unable to Navigate to the Admin Details Page after triggering a GET request. The backend returns a '404 Not Found' status code ***********")
+            self.logger.error("*********** Test Case 1 Failed: Unable to Locate element on web page by given XPATH ***********")
             assert False, "Test Case 1 Fail"
 
 
@@ -68,7 +68,7 @@ class Test_Admin_Details_Page():
 
         except(NoSuchElementException):
             self.driver.save_screenshot(r".\\ScreenShot\\FailTests\\Test Case 1.1- Fail.png")
-            self.logger.error("*********** Test Case 1.1 Failed: Unable to Locate the 'User Name Field' and 'Search Button' ***********")
+            self.logger.error("*********** Test Case 1.1 Failed: Unable to Locate element on web page by given XPATH ***********")
             assert False, "Test Case 1.1 Fail"
         time.sleep(3)
 
@@ -129,7 +129,7 @@ class Test_Admin_Details_Page():
 
         except(NoSuchElementException):
             self.driver.save_screenshot(r".\\ScreenShot\\FailTests\\Test Case 2- Fail.png")
-            self.logger.error("*********** Test Case 2 Failed: The application crashes when trying to add a new record to the back-end after triggering the POST request. The back-end returns a '500 Internal Server Error' status code ***********")
+            self.logger.error("*********** Test Case 2 Failed: Unable to Locate element on web page by given XPATH ***********")
             assert False, "Test Case 2- Fail"
 
 

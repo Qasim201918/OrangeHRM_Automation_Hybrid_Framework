@@ -37,7 +37,7 @@ class Test_Smoke_Login_Process():
                 assert True
         except(NoSuchElementException):
             self.driver.save_screenshot(r'.\\ScreenShot\\FailTests\\Test Case 1- Fail.png')
-            self.logger.error("************ Test Case 1 Failed: Login Failed: Unable to navigate to the Dashboard page after triggering a POST request. The backend returns a '500 Internal Server Error' status code ************")
+            self.logger.error("************ Test Case 1 Failed: Unable to Locate element on web page by given XPATH ************")
             assert False, "Test Case 1- Fail"
 
 

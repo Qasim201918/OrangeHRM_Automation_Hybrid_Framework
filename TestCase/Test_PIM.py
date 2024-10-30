@@ -44,7 +44,7 @@ class Test_PIM_Details_Page():
                 assert False,"Test Case 1 Failed"
         except(NoSuchElementException):
             self.driver.save_screenshot(".\\ScreenShot\\FailTests\\Test Case 1- Fail.png")
-            self.logger.error("*********** Test Case 1 Failed: The search functionality for 'Employee Information' failed to retrieve data from the backend ***********")
+            self.logger.error("*********** Test Case 1 Failed: Unable to Locate element on web page by given XPATH ***********")
             assert False,"Test Case 1 Failed"
 
 
